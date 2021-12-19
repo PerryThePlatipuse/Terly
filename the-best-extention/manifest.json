@@ -1,0 +1,18 @@
+{
+    "name": "Custom context menu in browser action",
+    "version": "1",
+    "manifest_version": 2,
+    "background": {
+      "scripts": ["eventPage.js"]
+    },
+    "browser_action": {
+      "default_title": "Some tooltip",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "contextMenus"
+    ],
+    "icons": {
+      "128": "14x.png"
+    }
+}

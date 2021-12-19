@@ -1,0 +1,143 @@
+ .u-section-1 {
+  min-height: 630px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 700px;
+  animation-duration: 1000ms;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0;
+}
+
+.u-section-1 .u-image-1 {
+  width: 502px;
+  height: 502px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 18px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: linear-gradient(45deg, #77aad9, #478ac9);
+  border-style: none;
+  animation-duration: 1000ms;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 47px auto 0;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 700px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 18px 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 18px 56px 0;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 519px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 577px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 470px;
+    height: 470px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    background-position: 50% 50%;
+    min-height: 577px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 360px;
+    height: 360px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 200px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 434px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 324px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 29px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 537px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-left: 29px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 0;
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+}

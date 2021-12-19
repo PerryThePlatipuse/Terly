@@ -5,7 +5,8 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
 @app.route('/')
-def hello_world():  # put application's code here
+def hello_world():
+    print("yes")# put application's code here
     return render_template("index.html")
 
 

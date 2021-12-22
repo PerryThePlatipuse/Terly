@@ -1,16 +1,14 @@
  .u-section-1 {
-  background-image: url("images/layered-waves-haikei2.svg");
-  background-position: 50% 50%;
-  min-height: 1117px;
+  min-height: 630px;
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  margin-top: 64px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .u-section-1 .u-layout-cell-1 {
-  min-height: 1053px;
+  min-height: 700px;
   animation-duration: 1000ms;
 }
 
@@ -22,21 +20,21 @@
   width: 502px;
   height: 502px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  margin: 168px auto 0;
+  margin: 18px auto 0;
 }
 
 .u-section-1 .u-btn-1 {
+  background-image: linear-gradient(45deg, #77aad9, #478ac9);
   border-style: none;
   animation-duration: 1000ms;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  text-transform: uppercase;
-  background-image: none;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 47px auto 0;
 }
 
 .u-section-1 .u-layout-cell-2 {
-  min-height: 1053px;
+  min-height: 700px;
 }
 
 .u-section-1 .u-container-layout-2 {
@@ -44,11 +42,11 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin: 150px auto 0 56px;
+  margin: 0 auto 0 0;
 }
 
 .u-section-1 .u-text-2 {
-  margin: 37px 56px 0;
+  margin: 18px 56px 0;
 }
 
 @media (max-width: 1199px) {
@@ -57,7 +55,7 @@
   }
 
   .u-section-1 .u-layout-cell-1 {
-    min-height: 868px;
+    min-height: 577px;
   }
 
   .u-section-1 .u-image-1 {
@@ -67,7 +65,7 @@
 
   .u-section-1 .u-layout-cell-2 {
     background-position: 50% 50%;
-    min-height: 868px;
+    min-height: 577px;
   }
 
   .u-section-1 .u-text-2 {
@@ -96,7 +94,7 @@
   }
 
   .u-section-1 .u-text-2 {
-    margin-left: 56px;
+    margin-left: 0;
     margin-right: 0;
   }
 }

@@ -4,6 +4,7 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 print("kal")
+print("normal_commit")
 @app.route('/')
 def hello_world():
     print("yes")# put application's code here

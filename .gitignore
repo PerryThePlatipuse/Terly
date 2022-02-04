@@ -1,1 +1,9 @@
 venv
+/SimpleHTR/data/
+/SimpleHTR/doc/
+/SimpleHTR/model/
+/SimpleHTR/src/
+/SimpleHTR/.gitignore
+/SimpleHTR/LICENSE.md
+/SimpleHTR/README.md
+/SimpleHTR/requirements.txt

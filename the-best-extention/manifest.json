@@ -10,7 +10,7 @@
       "default_popup": "popup.html"
     },
     "permissions": [
-      "contextMenus"
+      "contextMenus", "storage", "unlimitedStorage", "system.storage", "system.memory", "scripting", "downloads"
     ],
     "icons": {
       "128": "14x.png"

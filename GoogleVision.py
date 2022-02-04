@@ -2,10 +2,12 @@ import os
 from google.cloud import vision
 import io
 from PIL import Image, ImageDraw
-import cv2
 import numpy as np
 from pprint import pprint
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\detecting handwriting-21f8330c8722.json"
+
+os.environ[
+    "GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alex/Documents/pythonProject/Terly/detecting-" \
+                                        "handwr-1633704827967-71d8fa3c9e15.json"
 
 
 # image1 = cv2.imread('photo.png')
@@ -44,11 +46,11 @@ def detect_document(path):
                     ])
                     words.append(word_text)
                 paragr.append(' '.join(words))
-            blocks.append(paragr)
+            blocks.append(' '.join(paragr))
     return blocks
 
 
-pprint(detect_document("photo.png"))
+# detect_document("/Users/alex/Documents/pythonProject/Terly/static/styles/images/terly_photo.png")
 
 # Ounogrfope - это
 #

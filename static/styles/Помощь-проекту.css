@@ -1,0 +1,75 @@
+ .u-section-1 {
+  background-image: url("styles/images/layered-waves-haikei2.svg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1053px;
+}
+
+.u-section-1 .u-text-1 {
+  margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.u-section-1 .u-text-2 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.u-section-1 .u-text-3 {
+  font-weight: 400;
+  margin: 41px 0 60px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  text-decoration: underline !important;
+  padding: 0;
+}
+
+@media (max-width: 1399px) {
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 213px;
+    margin-bottom: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 41px;
+    margin-bottom: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 708px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 542px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 407px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 256px;
+  }
+}

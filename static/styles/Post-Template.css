@@ -37,13 +37,15 @@
   margin-left: 0;
 }
 
+@media (max-width: 1399px) {
+  .u-section-1 .u-image-1 {
+    margin-left: initial;
+  }
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-post-details-1 {
     height: 715px;
-  }
-
-  .u-section-1 .u-image-1 {
-    margin-left: initial;
   }
 }
 

@@ -459,14 +459,3 @@ main {
 		visibility: visible;
 	}
 }
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--fg: #e3e4e8;
-		--shade1: #23252a;
-		--shade2: #3e424c;
-		--shade3: #4a4e5a;
-		--shade4: #686e7e;
-	}
-}

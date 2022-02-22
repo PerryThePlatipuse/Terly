@@ -1,61 +1,56 @@
+import requests
+import json
 import os
-from google.cloud import vision
-import io
-from PIL import Image, ImageDraw
-import numpy as np
-from pprint import pprint
+from PIL import Image
+import time
 
-os.environ[
-    "GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alex/Documents/pythonProject/Terly/detecting-" \
-                                        "handwr-1633704827967-71d8fa3c9e15.json"
+private_secret_key = "AIzaSyDEN_6QPOSdEES8AjkfUuWg3QShB0bvKA8"
 
+url = "https://vision.googleapis.com/v1/images:annotate"
 
-# image1 = cv2.imread('photo.png')
-# kernel_sharp = [[1, 4, 6, 4, 1],
-#                 [4, 16, 24, 16, 4],
-#                 [6, 24, -476, 24, 6],
-#                 [4, 16, 24, 16, 4],
-#                 [1, 4, 6, 4, 1]]
-# kernel_sharp = np.array(kernel_sharp).astype(np.float64)
-# kernel_sharp *= (-1 / 156)
-# img1 = cv2.filter2D(src=image1, ddepth=-1, kernel=kernel_sharp)
-# cv2.imwrite("photo.png", img1)
+querystring = {"key": private_secret_key}
+headers = {
+    'Content-Type': "application/json",
+}
 
 
-def detect_document(path):
-    """Detects document features in an image."""
-    from google.cloud import vision
-    import io
-    client = vision.ImageAnnotatorClient()
-
-    with io.open(path, 'rb') as image_file:
-        content = image_file.read()
-
-    image = vision.Image(content=content)
-
-    response = client.document_text_detection(image=image, image_context={"language_hints": ["ru"]})
-    blocks = []
-    for page in response.full_text_annotation.pages:
-        for block in page.blocks:
-            paragr = []
-            for paragraph in block.paragraphs:
-                words = []
-                for word in paragraph.words:
-                    word_text = ''.join([
-                        symbol.text for symbol in word.symbols
-                    ])
-                    words.append(word_text)
-                paragr.append(' '.join(words))
-            blocks.append(' '.join(paragr))
-    return blocks
-
-
-# detect_document("/Users/alex/Documents/pythonProject/Terly/static/styles/images/terly_photo.png")
-
-# Ounogrfope - это
-#
-# ф, чем отличается меjon grouе от мезонит geneuuu: на дроблення клетка не получае nur. b-bа = te paciem
-#
-# 3. Какой этап эмбриогенезе есть у человека, но нет у животных? Морула
-#
-# Н. На каком этапе заканчивается
+def image_request():
+    os.system("base64 -i 'static/styles/images/terly_photo.png' -o encoded_img.terly")
+    time.sleep(0.5)
+    with open("encoded_img.terly") as f:
+        contet_ans = f.read().strip()
+    payload = {
+        "requests": [
+            {
+                "features": [
+                    {
+                        "maxResults": 50,
+                        "model": "builtin/latest",
+                        "type": "DOCUMENT_TEXT_DETECTION"
+                    }
+                ],
+                "image": {
+                    "content": str(contet_ans)
+                },
+                "imageContext": {
+                    "cropHintsParams": {
+                        "aspectRatios": [
+                            0.8,
+                            1,
+                            1.2
+                        ]
+                    },
+                    "languageHints": ["ru"]
+                }
+            }
+        ]
+    }
+    json.dump(payload, open("request.json", 'w'))
+    img = Image.open("static/styles/images/terly_photo.png")
+    x, y = img.size
+    response = requests.request("POST", url, data=json.dumps(payload), headers=headers, params=querystring)
+    parsed_text = []
+    for i in response.json()["responses"][0]["textAnnotations"][1:]:
+        coords = i["boundingPoly"]["vertices"]
+        # croping imgs
+    return response.json()["responses"][0]["fullTextAnnotation"]["text"].replace('\n', ' ')

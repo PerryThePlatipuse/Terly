@@ -1,6 +1,8 @@
-Государственное бюджетное общеобразовательное
 
-учреждение города Москвы \"Школа № 1535\"
+
+**Государственное бюджетное общеобразовательное**
+
+**учреждение города Москвы \"Школа № 1535\"**
 
 **"Terly. Расширение для браузера, способное распознавать рукописный
 текст по фотографиям"**
@@ -61,7 +63,7 @@
 
 # Новизна и анализ рынка
 
-Первичный анализ рынка \[2\] и поиск аналогов в сети интернет показал,
+Первичный анализ рынка [2] и поиск аналогов в сети интернет показал,
 что не существует сайтов или расширений для браузеров, способных
 перевести русский рукописный текст с фотографии в машинный.
 
@@ -83,10 +85,9 @@
 воспользоваться приложением, необходимо сделать фотографию текста, что
 занимает много времени.
 
-![](./readme_imgs//media/image1.png){width="4.5635422134733155in"
-height="2.4276377952755905in"}
+![](./readme_imgs//media/image1.png)
 
-Рисунок 1. Результат работы приложения Google Lens
+> Рисунок 1. Результат работы приложения Google Lens
 
 2.  **ABBYY FineReader Engine**
 
@@ -96,10 +97,9 @@ height="2.4276377952755905in"}
 поиска документы, а также получать доступ к данным на изображениях.
 ABBYY FineReader Engine обладает самой высокой точностью на рынке.
 
-![](./readme_imgs//media/image2.png){width="5.4743143044619424in"
-height="4.426041119860018in"}
+![](./readme_imgs//media/image2.png)
 
-Рисунок 2. Результат работы приложения ABBYY FineReader Engine.
+> Рисунок 2. Результат работы приложения ABBYY FineReader Engine.
 
 # Цели и задачи проекта
 
@@ -138,7 +138,7 @@ height="4.426041119860018in"}
 # План проекта
 
 Подробный план находится в [[Приложении
-6]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
+6]](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
 
 # Ресурсы
 
@@ -162,30 +162,26 @@ height="4.426041119860018in"}
 1)  Ученик отправляет свое домашнее задание на почту (или в LMS)
 
 2)  Учитель открывает изображение в браузере, выбирает в контекстном
-    > меню расширение Terly (рис. 3)
+    меню расширение Terly (рис. 3)
 
-![](./readme_imgs//media/image3.png){width="6.410416666666666in"
-height="2.9479166666666665in"}
-
-Рис. 3. Изображение работы приложения
+![](./readme_imgs//media/image3.png)
+> Рис. 3. Изображение работы приложения
 
 3)  На сайте Terly распознается рукописный текст и происходит перевод
-    > его в печатный. На рис. 4 показан результат работы приложения.
+    его в печатный. На рис. 4 показан результат работы приложения.
+Для достижения поставленной цели необходимо разработать веб-расширение
+для браузера Google Chrome.
 
-> Для достижения поставленной цели необходимо разработать веб-расширение
-> для браузера Google Chrome.
+![](./readme_imgs//media/image4.png)
 
-![](./readme_imgs//media/image4.png){width="6.159384295713036in"
-height="3.4172495625546806in"}
-
-Рисунок 4. Результат работы приложения
+> Рисунок 4. Результат работы приложения
 
 ## Разработка оформления сайта
 
 Было решено начать с графического оформления сайта (фронтенда). Задача
 состоит в том, чтобы сделать интерфейс простым, интуитивно понятным и не
 отвлекающим внимания (см. рис. 4). Подробнее см. в [[приложении
-7]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
+7]](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
 
 ## Разработка расширения для Google Chrome
 
@@ -200,7 +196,7 @@ height="3.4172495625546806in"}
 -   popup.html --- краткая информация о расширении
 
 Подробнее см. в [[приложении
-1]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
+1]](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
 
 ## Серверная часть
 
@@ -222,20 +218,18 @@ height="3.4172495625546806in"}
 
 5.  **Регистрация в Google Vision API**
 
-> Было решено начать с регистрации в Google Vision API (рис. 5).
->
-> C помощью API удалось получить некоторые результаты, которые далеки от
-> идеала \[6\] (рис. 6).
+Было решено начать с регистрации в Google Vision API (рис. 5).
 
-![](./readme_imgs//media/image5.png){width="6.298966535433071in"
-height="3.5416666666666665in"}
+C помощью API удалось получить некоторые результаты, которые далеки от
+идеала (рис. 6).
 
-Рисунок 5. Google console
+![](./readme_imgs//media/image5.png)
 
-![](./readme_imgs//media/image6.png){width="6.298966535433071in"
-height="3.5416666666666665in"}
+> Рисунок 5. Google console
 
-Рисунок 6. Результаты Google Vision
+![](./readme_imgs//media/image6.png)
+
+> Рисунок 6. Результаты Google Vision
 
 6.  **Разработка искусственного интеллекта**
 
@@ -245,9 +239,7 @@ height="3.5416666666666665in"}
 В публичном доступе отсутствуют размеченные наборы данных на русском
 языке. Доступные данные либо описывают английский текст, либо недоступны
 для коммерческого использования. В качестве теста, исследования, была
-взята самая большая БД из найденных. Подробнее см. в [[приложении
-2]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).![](./readme_imgs//media/image7.png){width="4.113542213473316in"
-height="1.687866360454943in"}
+взята самая большая БД из найденных. Подробнее см. в [приложении 2](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit)
 
 Рисунок 7. Пример слов из HKR
 
@@ -266,46 +258,42 @@ height="1.687866360454943in"}
 
 Исходя из вышеперечисленных недостатков, необходима предобработка
 данных. Ее этапы описаны в [[приложении
-3]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit):
+3]](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit):
 
 Разрабатываем нейросеть (рис. 8).
 
-![](./readme_imgs//media/image8.png){width="4.948958880139982in"
-height="0.7607491251093613in"}
+![](./readme_imgs//media/image8.png)
 
-Рисунок 8. Пример работы нейросети
+> Рисунок 8. Пример работы нейросети
 
 Используем небольшую нейронную сеть для нашей задачи. Она состоит из
 слоев CNN, RNN и слоя CTC (рис. 9).
 
-![](./readme_imgs//media/image9.png){width="6.298966535433071in"
-height="3.888888888888889in"}
+![](./readme_imgs//media/image9.png)
 
-Рисунок 9. Схема нейросети
+> Рисунок 9. Схема нейросети
 
 На вход подается изображение в серых тонах, затем приводится к размеру
 128×32 - уменьшаем размер, сохраняя пропорции, пока не достигнем одного
 из этих измерений.
 
-![](./readme_imgs//media/image10.png){width="5.8125in"
-height="0.71875in"}
+![](./readme_imgs//media/image10.png)
 
-Рисунок 10. Изменение размера изображения
+> Рисунок 10. Изменение размера изображения
 
 Второй слой - это слой активации ReLu (выпрямленная линейная единица).
 График представлен на рис. 11.
 
-![](./readme_imgs//media/image11.png){width="1.5982863079615048in"
-height="1.1864588801399825in"}
+![](./readme_imgs//media/image11.png)
 
-Рисунок 11. Функция активации ReLu.
+> Рисунок 11. Функция активации ReLu.
 
 На этом этапе применяется функция выпрямления для увеличения
 нелинейности в CNN, так как изображения состоят из разных объектов,
 которые не являются линейными относительно друг друга.
 
 Необходимость использования слоев активации более подробно объясняется в
-книге \[8\].
+книге [8].
 
 На рис. 16 показаны выходные данные слоев CNN, которые представляют
 собой последовательность длиной 32. Каждая запись содержит 256
@@ -313,15 +301,14 @@ height="1.1864588801399825in"}
 некоторые признаки уже показывают высокую корреляцию с высокоуровневыми
 свойствами входного изображения:
 
-​​![](./readme_imgs//media/image12.png){width="4.172005686789151in"
-height="3.303124453193351in"}
+​​![](./readme_imgs//media/image12.png)
 
-Рисунок 12. Выходные данные слоев CNN.
+> Рисунок 12. Выходные данные слоев CNN.
 
 Далее следует слой RNN. Это последовательность функций содержит 256
 возможных значений на временной шаг - "полосы, на которые разбивается
 изображение"; всего временных шагов - 32. Подробнее см. в [[приложении
-5]{.underline}](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
+5]](https://docs.google.com/document/u/0/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit).
 
 7.  **Обучение нейросети**
 
@@ -332,144 +319,116 @@ height="3.303124453193351in"}
 проводилось с помощью библиотеки Tensorflow 2.0, драйверов CUDA 11.6,
 видеокарты NVIDIA 2060 SUPER.
 
-Таблица 3. Результаты обучения нейросети
+> Таблица 3. Результаты обучения нейросети
 
 
-+----------------------+-----------------------+-----------------------+
-| Алгоритм             | CER (char error rate) | WAR (word accuracy    |
-|                      |                       | rate)                 |
-|                      | доля ошибок в         |                       |
-|                      | буквенном             | точность              |
-|                      | распознавании         | распознавании слов    |
-|                      |                       | цели                  |
-+----------------------+-----------------------+-----------------------+
-| bestpath             | 0.435                 | 0.63                  |
-+----------------------+-----------------------+-----------------------+
-| beamsearch           | 0.41                  | 0.68                  |
-+----------------------+-----------------------+-----------------------+
-| wordbeamsearch       | 0.36                  | 0.75                  |
-+----------------------+-----------------------+-----------------------+
+| Алгоритм       | CER (char error rate) доля ошибок в буквенном распознавании | WAR (word accuracy rate) точность распознавании слов цели |
+|----------------|-------------------------------------------------------------|-----------------------------------------------------------|
+| bestpath       | 0.435                                                       | 0.63                                                      |
+| beamsearch     | 0.41                                                        | 0.68                                                      |
+| wordbeamsearch | 0.36                                                        | 0.75                                                      |
 
 
-> Как мы видим, нейросеть показывает лучшие результаты, когда
-> используется алгоритм wordbeamsearch, что не удивительно, так как он
-> совершеннее других. Остановимся на последнем цикле подробнее (рис. 13
-> и рис. 14).
+Как мы видим, нейросеть показывает лучшие результаты, когда
+используется алгоритм wordbeamsearch, что не удивительно, так как он
+совершеннее других. Остановимся на последнем цикле подробнее (рис. 13
+и рис. 14).
 
-![](./readme_imgs//media/image13.png){width="4.865625546806649in"
-height="3.649219160104987in"}
+![](./readme_imgs//media/image13.png)
 
-Рисунок 13. Точность распознавания слов целиком
+> Рисунок 13. Точность распознавания слов целиком
 
-![](./readme_imgs//media/image14.png){width="4.823958880139982in"
-height="3.611988188976378in"}
+![](./readme_imgs//media/image14.png)
 
-Рисунок 14. Доля ошибок в буквенном распознавании
+> Рисунок 14. Доля ошибок в буквенном распознавании
 
-> Приступим к анализу графиков. Первый с некоторого момента начинает
-> расти линейно, второй же убывает экспоненциально. Под конец обучения
-> точность распознавания слов начала увеличиваться намного быстрее, чем
-> точность распознавания отдельных букв. Это, в первую очередь, говорит
-> о том, что нейросеть начала переобучаться, подгоняя веса и смещения
-> под данную БД. Наше предположения также подтверждает следующий
-> эксперимент. Мы подготовили для нейросети два слова: «домовой» и
-> «атырау) (специально с прописной буквы!). В БД не было слова
-> "домовой", зато было слово "Атырау" (с заглавной буквы).
+Приступим к анализу графиков. Первый с некоторого момента начинает
+расти линейно, второй же убывает экспоненциально. Под конец обучения
+точность распознавания слов начала увеличиваться намного быстрее, чем
+точность распознавания отдельных букв. Это, в первую очередь, говорит
+о том, что нейросеть начала переобучаться, подгоняя веса и смещения
+под данную БД. Наше предположения также подтверждает следующий
+эксперимент. Мы подготовили для нейросети два слова: «домовой» и
+«атырау) (специально с прописной буквы!). В БД не было слова
+"домовой", зато было слово "Атырау" (с заглавной буквы).
 
-![](./readme_imgs//media/image15.png){width="1.8650218722659668in"
-height="0.7281255468066492in"}
+![](./readme_imgs//media/image15.png)
 
-Рисунок 15. "атырау" прописью
+> Рисунок 15. "атырау" прописью
 
-![](./readme_imgs//media/image16.png){width="1.4088495188101486in"
-height="0.5266732283464567in"}
+![](./readme_imgs//media/image16.png)
 
-Рисунок 16. "домовой" прописью
+> Рисунок 16. "домовой" прописью
 
-> «Домовой» нейросеть распознала как "зиновой", "атырау" как "Атырау".
-> Из этого можно сделать вывод, что переобученная нейросеть распознает
-> только те слова, которые изначально были в БД.
->
-> Первый опыт в обучении (пусть даже и не очень удачный) помог нам
-> осознать наши ошибки и понять, что нам надо делать дальше. Мы решили
-> начать создавать свою БД, учитывая наши предыдущие ошибки и опыт
-> казахстанских коллег.
->
-> В качестве БД было выбрано 4200 самых часто употребляемых слов
-> русского языка, не короче 5 символов и не длиннее 12. В итоге
-> получилось 47 форм по 90 слов на каждой. Мы специально включили слова,
-> которые невозможно уместить в таком маленьком поле, чтобы человек
-> намеренно зачеркнул их, и нейросеть училась бы справляться с
-> исправлениями. Они были розданы родственникам, друзьям и
-> одноклассникам. Каждая форма имеет уникальный номер, который
-> определяет, какие слова на ней находятся (рис. 17). При сканировании
-> всех форм на одном принтере, заранее известно местоположение слов,
-> поэтому не придется работать с обнаружением слов. Однако 4 тысяч слов
-> никак не сравнимо с размером базы данных, на которой нейросеть
-> способна обучиться до хорошего уровня. В перспективе мы планируем ее
-> расширять; в качестве прототипа будет использоваться нейросеть,
-> обученная на HKR, а также Google Vision API.
+«Домовой» нейросеть распознала как "зиновой", "атырау" как "Атырау".
+Из этого можно сделать вывод, что переобученная нейросеть распознает
+только те слова, которые изначально были в БД.
 
-![](./readme_imgs//media/image17.jpeg){width="3.6468755468066494in"
-height="5.22514435695538in"}
+Первый опыт в обучении (пусть даже и не очень удачный) помог нам
+осознать наши ошибки и понять, что нам надо делать дальше. Мы решили
+начать создавать свою БД, учитывая наши предыдущие ошибки и опыт
+казахстанских коллег.
 
-Рисунок 17. Пример заполненной формы
+В качестве БД было выбрано 4200 самых часто употребляемых слов
+русского языка, не короче 5 символов и не длиннее 12. В итоге
+получилось 47 форм по 90 слов на каждой. Мы специально включили слова,
+которые невозможно уместить в таком маленьком поле, чтобы человек
+намеренно зачеркнул их, и нейросеть училась бы справляться с
+исправлениями. Они были розданы родственникам, друзьям и
+одноклассникам. Каждая форма имеет уникальный номер, который
+определяет, какие слова на ней находятся (рис. 17). При сканировании
+всех форм на одном принтере, заранее известно местоположение слов,
+поэтому не придется работать с обнаружением слов. Однако 4 тысяч слов
+никак не сравнимо с размером базы данных, на которой нейросеть
+способна обучиться до хорошего уровня. В перспективе мы планируем ее
+расширять; в качестве прототипа будет использоваться нейросеть,
+обученная на HKR, а также Google Vision API.
+
+![](./readme_imgs//media/image17.jpeg)
+
+> Рисунок 17. Пример заполненной формы
 
 ## Back End сайта
 
-> Серверная часть сайта полностью написана на фреймворке flask.
-> Предобработка изображений необходима, т.к нейросеть сбивают тетрадные
-> "клеточки".
->
-> Будет использоваться Kernel фильтр библиотеки opencv2, а также
-> морфологическая операция.
->
-> Принцип работы продемонстрирован на рисунках 18 и 19.
+Серверная часть сайта полностью написана на фреймворке flask.
+Предобработка изображений необходима, т.к нейросеть сбивают тетрадные
+"клеточки".
+Будет использоваться Kernel фильтр библиотеки opencv2, а также
+морфологическая операция.
+Принцип работы продемонстрирован на рисунках 18 и 19.
 
-![](./readme_imgs//media/image18.jpeg){width="4.514176509186352in"
-height="2.571875546806649in"}
+![](./readme_imgs//media/image18.jpeg)
 
-Рисунок 18. Пример изображения
+> Рисунок 18. Пример изображения
 
-![](./readme_imgs//media/image19.png){width="4.445308398950131in"
-height="2.5729166666666665in"}
+![](./readme_imgs//media/image19.png)
 
 > Рисунок 19. Пример обработанного изображения
->
-> Фильтр осветляет и добавляет контраст изображению, помогая ИИ и
-> функции определения местоположения слов.
->
-> Чтобы отделить слова друг от друга, будет использоваться репозиторий
-> DeslantImg \[1\].
 
-![](./readme_imgs//media/image20.png){width="4.492917760279965in"
-height="1.7805741469816272in"}
+Фильтр осветляет и добавляет контраст изображению, помогая ИИ и
+функции определения местоположения слов.
 
-Рисунок 20. Пример работы DeslantImg
+Чтобы отделить слова друг от друга, будет использоваться репозиторий
+DeslantImg [1].
+
+![](./readme_imgs//media/image20.png)
+
+> Рисунок 20. Пример работы DeslantImg
 
 # Результат, выводы и пути развития:
 
-Таблица 4. Сравнение с аналогами
+> Таблица 4. Сравнение с аналогами
 
 
-  ----------------- ----------------- ----------------- -----------------
-                    Google Lens       ABBYY FINEREADER  **Terly**
-
-  Удобство          9                 4                 10
-
-  Веб-версия        \-                \-                \+
-
-  Цена              бесплатно         200 \$ / мес      бесплатно
-
-  Языки (кол-во)    Более двух        Более двух        1
-
-  Качество          7                 8                 7
-  распознавания                                         
-
-  Быстрота          9                 3                 10
-
-  Итого             27                17                **29**
-  ----------------- ----------------- ----------------- -----------------
+  |                        | Google Lens | ABBYY FINEREADER | Terly     |
+|------------------------|-------------|------------------|-----------|
+| Удобство               | 9           | 4                | 10        |
+| Веб-версия             | -           | -                | +         |
+| Цена                   | бесплатно   | 200 $ / мес      | бесплатно |
+| Языки (кол-во)         | Более двух  | Более двух       | 1         |
+| Качество распознавания | 7           | 8                | 7         |
+| Быстрота               | 9           | 3                | 10        |
+| Итого                  | 27          | 17               | 29        |
 
 
 1)  Разработано расширение для интернет-браузера Google Chrome,
@@ -519,68 +478,67 @@ height="1.7805741469816272in"}
 # Пример работы расширения 
 
 > Доступен по
-> [[ссылке]{.underline}](https://drive.google.com/file/d/1EdxNW4xggwWanYlBfR4uyHTq3V5delLe/view?usp=sharing)
+> [ссылке](https://drive.google.com/file/d/1EdxNW4xggwWanYlBfR4uyHTq3V5delLe/view?usp=sharing)
 
 # Список источников и использованной литературы
 
-1)  Алгоритм выравнивания курсивного почерка \[Электронный ресурс\]. --
+1) Алгоритм выравнивания курсивного почерка [Электронный ресурс]. --
     URL:
-    [[https://github.com/githubharald/DeslantImg]{.underline}](https://github.com/githubharald/DeslantImg)
+    [https://github.com/githubharald/DeslantImg](https://github.com/githubharald/DeslantImg)
 
-2)  Анализ поискового запроса \[Электронный ресурс\]. -- URL:
-    [[https://drive.google.com/file/d/1lp]{.underline}](https://drive.google.com/file/d/1lpXzj3x-zvfrIooUKciz-NW8iZr6OGOz/view)
+2) Анализ поискового запроса [Электронный ресурс]. -- URL:
+    [https://drive.google.com/file/d/1lp](https://drive.google.com/file/d/1lpXzj3x-zvfrIooUKciz-NW8iZr6OGOz/view)
 
-3)  Используемые книги:
+3) Используемые книги:
+   - Handwritten Text Recognition in Historical Documents [Электронный
+       ресурс]. -- URL:
+       [https://repositum.tuwien.at/retrieve/10807](https://repositum.tuwien.at/retrieve/10807)
 
--   Handwritten Text Recognition in Historical Documents \[Электронный
-    ресурс\]. -- URL:
-    [[https://repositum.tuwien.at/retrieve/10807]{.underline}](https://repositum.tuwien.at/retrieve/10807)
+   - An End-to-End Trainable Neural Network for Text Recognition
+       [Электронный ресурс]. -- URL:
+       [https://arxiv.org/abs/1507.05717](https://arxiv.org/abs/1507.05717)
 
--   An End-to-End Trainable Neural Network for Text Recognition
-    \[Электронный ресурс\]. -- URL:
-    [[https://arxiv.org/abs/1507.05717]{.underline}](https://arxiv.org/abs/1507.05717)
+   - Attention models for end-to-end handwritten paragraph recognition
+       [Электронный ресурс]. -- URL:
+       [http://www.tbluche.com/scan_attend_read.html](http://www.tbluche.com/scan_attend_read.html)
 
--   Attention models for end-to-end handwritten paragraph recognition
-    \[Электронный ресурс\]. -- URL:
-    [[http://www.tbluche.com/scan_attend_read.html]{.underline}](http://www.tbluche.com/scan_attend_read.html)
+5) Реализация морфологической операции Google Chrome [Электронный
+    ресурс]. URL:
+    [https://github.com/PerryThePlatipuse/Terly/blob/](https://github.com/PerryThePlatipuse/Terly/blob/master/morphological%20operation/morph.py)
 
-4)  Реализация морфологической операции Google Chrome \[Электронный
-    ресурс\]. URL:
-    [[https://github.com/PerryThePlatipuse/Terly/blob/]{.underline}](https://github.com/PerryThePlatipuse/Terly/blob/master/morphological%20operation/morph.py)
+6) Реализация расширения Google Chrome [Электронный ресурс]. -- URL:
+    [https://github.com/PerryThePlatipuse/Terly/tree/master/](https://github.com/PerryThePlatipuse/Terly/tree/master/the-best-extention)
 
-5)  Реализация расширения Google Chrome \[Электронный ресурс\]. -- URL:
-    [[https://github.com/PerryThePlatipuse/Terly/tree/master/]{.underline}](https://github.com/PerryThePlatipuse/Terly/tree/master/the-best-extention)
+7) Реализация Google Vision API [Электронный ресурс]. -- URL:
+    ([https://github.com/PerryThePlatipuse/Terly/blob/master/](https://github.com/PerryThePlatipuse/Terly/blob/master/GoogleVision.py))
 
-6)  Реализация Google Vision API \[Электронный ресурс\]. -- URL:
-    ([[https://github.com/PerryThePlatipuse/Terly/blob/master/]{.underline}](https://github.com/PerryThePlatipuse/Terly/blob/master/GoogleVision.py))
+8) Формирование базы данных [Электронный ресурс]. -- URL:
+    [https://fki.tic.heia-fr.ch/databases/iam-handwriting-database](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
 
-7)  Формирование базы данных \[Электронный ресурс\]. -- URL:
-    [[https://fki.tic.heia-fr.ch/databases/iam-handwriting-database]{.underline}](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
-
-8)  Deep Learning (Adaptive Computation and Machine Learning Series)
-    \[Электронный ресурс\]. -- URL:
+9) Deep Learning (Adaptive Computation and Machine Learning Series)
+    [Электронный ресурс]. -- URL:
     https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618
 
-9)  Explanation of CTC \[Электронный ресурс\]. -- URL:
-    [[https://towardsdatascience.com/intuitively-under]{.underline}](https://towardsdatascience.com/intuitively-understanding-connectionist-temporal-classification-3797e43a86c)
+10) Explanation of CTC [Электронный ресурс]. -- URL:
+     [https://towardsdatascience.com/intuitively-under](https://towardsdatascience.com/intuitively-understanding-connectionist-temporal-classification-3797e43a86c)
 
-10) FAQ: Handwritten Text Recognition System \[Электронный ресурс\]. --
+11) FAQ: Handwritten Text Recognition System [Электронный ресурс]. --
     URL:
-    [[https://towardsdatascience.com/faq-build-a-handwritten]{.underline}](https://towardsdatascience.com/faq-build-a-handwritten-text-recognition-system-using-tensorflow-27648fb18519) -
+    [https://towardsdatascience.com/faq-build-a-handwritten](https://towardsdatascience.com/faq-build-a-handwritten-text-recognition-system-using-tensorflow-27648fb18519) -
     способы создания базы данных для обучения нейронной сети
 
-11) Github: Handwritten Text Recognition \[Электронный ресурс\]. -- URL:
-    [[https://github.com/githubharald/SimpleHTR]{.underline}](https://github.com/githubharald/SimpleHTR) -
+12) Github: Handwritten Text Recognition [Электронный ресурс]. -- URL:
+    [https://github.com/githubharald/SimpleHTR](https://github.com/githubharald/SimpleHTR) -
     еще одна реализация.
 
-12) Handwritten Text Recognition System using TensorFlow \[Электронный
-    ресурс\]. -- URL:
-    [[https://towardsdatascience.com/build-a-handwritten-text]{.underline}](https://towardsdatascience.com/build-a-handwritten-text-recognition-system-using-tensorflow-2326a3487cd5)
+13) Handwritten Text Recognition System using TensorFlow [Электронный
+    ресурс]. -- URL:
+    [https://towardsdatascience.com/build-a-handwritten-text](https://towardsdatascience.com/build-a-handwritten-text-recognition-system-using-tensorflow-2326a3487cd5)
 
-13) IAM dataset \[Электронный ресурс\]. -- URL:
-    [[https://fki.tic.heia-fr.ch/databases/iam-handwriting-database]{.underline}](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
+14) IAM dataset [Электронный ресурс]. -- URL:
+    [https://fki.tic.heia-fr.ch/databases/iam-handwriting-database](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
 
 # Приложения
 
 Доступны по
-[[ссылке]{.underline}](https://docs.google.com/document/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit?usp=sharing)
+[ссылке](https://docs.google.com/document/d/1GEiswKjpfDHGbBg8Ah1A6hxMV8KOl-6L8lPDEnEk5ys/edit?usp=sharing)

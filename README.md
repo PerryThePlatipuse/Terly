@@ -1,4 +1,15 @@
+# Установка
 
+1. Регистрация на https://cloud.google.com/
+2. Получения ключа Google Vision API
+3. Создание файла private_key.py, где private_secret_key="ВАШ КЛЮЧ"
+4. Установка всех библиотек 
+    > pip install -r requirements.txt
+5. Загрузка the-best-extention в Google Chrome
+6. Запуск
+    > python3 app.py
+
+** Вся информация о проекте находится [тут](https://drive.google.com/drive/folders/18DAkf45O00Y1OQekZLbQ9DdD4bnLIzhw?lfhs=2)**
 
 **Государственное бюджетное общеобразовательное**
 

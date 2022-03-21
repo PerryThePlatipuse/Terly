@@ -9,7 +9,7 @@
 6. Запуск
     > python3 app.py
 
-** Вся информация о проекте находится [тут](https://drive.google.com/drive/folders/18DAkf45O00Y1OQekZLbQ9DdD4bnLIzhw?lfhs=2)**
+# Вся информация о проекте находится [тут](https://drive.google.com/drive/folders/18DAkf45O00Y1OQekZLbQ9DdD4bnLIzhw?lfhs=2)
 
 **Государственное бюджетное общеобразовательное**
 
